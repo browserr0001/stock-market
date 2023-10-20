@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This research project explores the application of natural language processing in tandem with a deep neural network to forecast daily changes in the Dow Jones Industrial Average (DJIA). The model demonstrated a slight improvement over random guessing in predicting market movements.
+This project explores the application of natural language processing in tandem with a deep neural network to forecast daily changes in the Dow Jones Industrial Average (DJIA). The model demonstrated a slight improvement over random guessing in predicting market movements.
 
 ## Introduction
 
