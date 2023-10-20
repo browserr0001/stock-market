@@ -1,27 +1,4 @@
-# cs230project
-# Using Daily News to Predict the Stock Market
-
-```
-Jason N. Kurohara
-Computer Science
-Stanford University
-jkuro@stanford.edu
-```
-```
-Joshua R. Chang
-Computer Science
-Stanford University
-jrchang@stanford.edu
-```
-```
-Callan A. Hoskins
-Computer Science
-Stanford University
-chosk@stanford.edu
-```
-## Abstract
-
-```
+##Abstract
 Financial markets are inherently volatile and reflect diverse macroeconomic and
 microeconomic trends. In this research project, we use natural language processing
 in conjunction with a deep neural network to predict the daily change in price of
@@ -62,31 +39,15 @@ day.
 CS230: Deep Learning, Winter 2018, Stanford University, CA. (LateX template borrowed from NIPS 2017.)
 
 
-## 2 Related work
-
-Past work has used text drawn from various sources to generate predictions about stock market
-movement. One team used Twitter [ 1 ] to extract public opinion and was able to use a neural network
-to transform these opinions into rather accurate predictions about the DJIA closing price. Other
-leading researchers have experimented with event detection algorithms [ 2 ] and other natural language
-processing techniques to create rich input for neural networks that aim to learn their relationship to
-stock prices.
-
-Others have focused on developing a neural network architecture that is best able to convert these
-inputs into accurate predictions. Since macroeconomic trends are closely tied to public opinion
-and sentiment, effective sentiment analysis is key for our objective. One promising model uses a
-convolutional neural network in conjunction with a recurrent neural network to conduct sentiment
-analysis of short texts [ 3 ]. This work is applicable to our objective because it extracts sentiment from
-documents that are too brief to contain much context, like news headlines.
-
 ## 3 Dataset and Features
 
-We used a publicly available dataset of DJIA prices and daily news articles available from Kaggle
+Project makes use of publicly available dataset of DJIA prices and daily news articles available from Kaggle
 [ 4 ]. The DJIA data included the opening and closing price of the DJIA, plus other metrics such as its
 daily trading volume, daily high, and daily low, for every market day from August 8, 2008 through
 July 1, 2016. This dataset can also be downloaded from Yahoo Finance.
 
 ```
-Figure 1: This is an example of all the metrics included for one day in our dataset.
+Figure 1: This is an example of all the metrics included for one day in the dataset.
 ```
 The news data included the 25 most popular news headlines for every day (including weekends)
 in the same range, sourced from Reddit News. The 25 news headlines for each day are those that
@@ -186,7 +147,7 @@ networks, which used more convolutional and fully connected layers.
 
 ## 6 Results
 
-Using the previous stock price changes and global news headlines, we achieved 55.28% accuracy
+Using the previous stock price changes and global news headlines, the model achieved 55.28% accuracy
 with a mean absolute error of 71.40, meaning that this model more accurately predicted price changes
 than our baseline.
 
@@ -194,7 +155,7 @@ Further tuning our hyperparameters, we increased the depth and width of our netw
 layers, 2 convolutional layers, and 128 hidden dimensions in the fully connected network to further
 increase our accuracy, reaching 58.28%.
 
-Our best model used 4 fully connected layers, 4 1D convolutions for the textual news data , and 126
+The best model used 4 fully connected layers, 4 1D convolutions for the textual news data , and 126
 hidden dimensions in the fully connected layer, achieving 61.31% accuracy in predicting a positive or
 negative change in the DJIA, a 7.03% increase of our baseline model. Our model was well-fit to the
 data, since the training error for our our best model was around 58% while our test accuracy was
@@ -212,7 +173,7 @@ determining the magnitude of stock price changes.
 
 ## 7 Conclusion
 
-Our model was able to outperform our baseline at the task of predicting whether the DJIA would rise
+The model was able to outperform our baseline at the task of predicting whether the DJIA would rise
 or fall each day. We started at 54% accuracy and eventually got to 61.31%–a marginal difference and
 still barely better than a coin flip. This model didn’t completely succeed at its task of predicting the
 overall stock price movements. However, it did far better than even many human analysts can do.
