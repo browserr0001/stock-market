@@ -1,4 +1,4 @@
-#Abstract
+# Abstract
 Financial markets are inherently volatile and reflect diverse macroeconomic and
 microeconomic trends. In this research project, we use natural language processing
 in conjunction with a deep neural network to predict the daily change in price of
@@ -187,32 +187,4 @@ from the presidential Twitter account and price information from foreign markets
 interesting to apply this model on a company-specific basis, feeding it news headlines focused on a
 single company. We suspect that this data would be even more relevant because it is directly relevant
 to the health of the company (which should be reflected in its stock price).
-
-## 8 Contributions
-
-Josh: Callan:
-
-## References
-
-[1]Xiaojun Zeng Johan Bollen, Huina Mao. Twitter mood predicts the stock market.Journal of
-Computational Science, 2(1):1–8, 2011.
-
-
-[2]Ting Liu Junwen Duan Xiao Ding, Yue Zhang. Deep learning for event-driven stock prediction.
-2014.
-
-[3]Zhiyoung Luo Xingyou Wang, Weijie Jiang. Combination of convolutional and recurrent neural
-network for sentiment analysis of short texts.COLING, 2016.
-
-[4] Aaron7sun. Daily news for stock market prediction, 2016.
-
-[5]Christopher D. Manning Jeffrey Pennington, Richard Socher. Glove: Global vectors for word
-representation, 2014.
-
-[6]David Currie. Predicting-the-dow-jones-with-headlines.https://github.com/Currie32/
-Predicting-the-Dow-Jones-with-Headlines.
-
-[7] Open Source Francois Challet. Keras deep learning framework.
-
-[8] Open Source. scikit-learn machine learning framework.
 
