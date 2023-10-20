@@ -1,4 +1,4 @@
-##Abstract
+#Abstract
 Financial markets are inherently volatile and reflect diverse macroeconomic and
 microeconomic trends. In this research project, we use natural language processing
 in conjunction with a deep neural network to predict the daily change in price of
